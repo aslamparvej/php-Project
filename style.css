@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+body{
+    background-color: #3ca1f3;
+}
+header{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+header h1{
+    font-size: 3rem;
+    font-family: 'Kalam', cursive;
+}
+header ul{
+    list-style: none;
+    display:flex;
+}
+header ul li a{
+    font-size: 1.2rem;
+    padding-left: 1rem;
+}
+
+form{
+    width: 50%;
+    height: 80vh;
+    margin: 0 auto;
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.input-section{
+    display: flex;
+    flex-direction: column;
+}
+.input-section label{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.input-section input{
+    font-size: 1.2rem;
+    height: 1.5rem;
+    outline: none;
+    border: none;
+    border-bottom:  1px solid #3ca1f3;
+}
+
+.preview-section {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    border: 2px dashed #3ca1f3;
+    overflow: hidden;
+}
+.preview-section span{
+    color: #3ca1f3;
+    font-size: 1.3rem;
+}
+.preview-image{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.icon{
+    width: 3rem;
+}
+.btn {
+    font-size: 1.2rem;
+    color: #fff;
+    width: 100%;
+    height: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    background-color: #3ca1f3;
+}
+.preview-section.active{
+    border: none;
+}
+.preview-section .preview-image{
+    width: 100%;
+    display: none;
+    border-radius: 5px;
+  }
+  .preview-section.active .preview-image{
+    display: block;
+  }
+  .preview-section.active .icon,
+  .preview-section.active span{
+    display: none;
+  }
+@media (max-width: 768px){
+    form{
+        width: 80%;
+    }
+    header{
+        display: block;
+    }
+    header ul{
+        display: none;
+    }
+    header h1{
+        text-align: center;
+    }
+    .preview-section span{
+        font-size: 1rem;
+    }
+}
